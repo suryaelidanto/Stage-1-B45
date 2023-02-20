@@ -1,0 +1,47 @@
+SEMANTIC VS NON SEMANTIC ELEMENT
+
+SEMANTIC
+menjelaskan tag html secara jelas tujuannya
+
+NON SEMANTIC
+Kebalikan dari semantic
+
+
+INLINE ELEMENT VS BLOCK ELEMENT HTML
+
+INLINE ELEMENT 
+tidak akan membuat line baru
+
+BLOCK ELEMENT HTML
+membuat line baru
+
+PADDING & MARGIN
+PADDING
+Jarak tempi container ke dalam element
+
+MARGIN
+jarak tepi container ke luar element
+
+
+
+
+Coretan pembelajaran
+<div>
+<h1 style="color: red; background-color: black">Kami Keren Belajar Web Dev</h1>
+
+<p style="font-size: 24px;">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+<p style="font-weight: bold;">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+
+<div>
+<a href="https://dumbways.id">Click Here</a>
+</div>
+<div style="margin: 24px;">
+<a href="https://dumbways.id">Click Here 2</a>
+</div>
+</div>
+
+<!-- <div>
+<h1>Kami Keren Belajar Web Dev</h1>
+<p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+<a href="https://dumbways.id">Click Here</a>
+</div> -->
