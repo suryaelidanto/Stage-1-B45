@@ -1,0 +1,7 @@
+styling css
+- inline
+- embeded
+- external
+
+Selector
+CSS Specificity Hierarchy
