@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="css/testimonials.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img src="assets/images/logo.png" alt="logo" />
+                </li>
+                <li class="item-collapse">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="item-collapse">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li class="item-collapse">
+                    <a href="testimonials.html" class="active">Testimonials</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right item-collapse">
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger();">
+                <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonials.html" class="hamburger-active">Testimonials</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+
+    <div class="container">
+        <h1>My Testimonials</h1>
+        <section class="testimonials" id="testimonials">
+            <!-- <div class="testimonial">
+                <img src="assets/profile/profile.png" class="profile-testimonial" />
+                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget lectus eu
+                    libero venenatis gravida eget vel odio."</p>
+                <p class="author">- Surya Elidanto</p>
+            </div> -->
+        </section>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/testimonials.js"></script>
+</body>
+
+</html>
