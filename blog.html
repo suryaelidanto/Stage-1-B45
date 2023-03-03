@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creating Blog Page</title>
+  <link rel="stylesheet" href="css/blog.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav>
+    <div class="nav-left">
+      <ul>
+        <li>
+          <img src="assets/images/logo.png" alt="logo" />
+        </li>
+        <li class="item-collapse">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="item-collapse">
+          <a href="blog.html" class="active">Blog</a>
+        </li>
+        <li class="item-collapse">
+          <a href="testimonials.html">Testimonials</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-right item-collapse">
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right" id="barsmenu">
+      <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger();">
+        <i class="fa-2x fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  <div class="hamburger-nav-container" id="hamburger-nav-container">
+    <a href="index.html">Home</a>
+    <a href="blog.html" class="hamburger-active">Blog</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact Me</a>
+  </div>
+
+  <!-- Blog -->
+  <!-- Form -->
+  <div class="blog">
+    <div class="blog-form">
+      <div class="form-container">
+        <form onsubmit="addBlog(event)">
+          <h1>Create Post Blog</h1>
+          <div>
+            <label for="input-blog-title">Title</label>
+            <input id="input-blog-title" />
+          </div>
+          <div>
+            <label for="input-blog-content">Content</label>
+            <textarea id="input-blog-content"></textarea>
+          </div>
+          <div>
+            <label for="">Start Date</label>
+            <input type="date" id="start-date">
+            <label for="">End Date</label>
+            <input type="date" id="end-date">
+          </div>
+
+          <div>
+            <label for="">Facebook</label>
+            <input type="checkbox" value="facebook" id="input-fb">
+
+            <label for="">Instagram</label>
+            <input type="checkbox" value="instagram" id="input-ig">
+
+            <label for="">Tiktok</label>
+            <input type="checkbox" value="tiktok" id="input-tok">
+          </div>
+
+          <div>
+            <label>Upload Image</label>
+            <div class="input-blog-image-group">
+              <label for="input-blog-image">
+                <p>Attach File</p>
+                <img src="assets/file.png" alt="file" />
+              </label>
+              <input type="file" id="input-blog-image" hidden />
+            </div>
+          </div>
+          <div class="button-group">
+            <button>Post Blog</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <hr class="line" />
+    <div id="contents" class="blog-list">
+      <!-- dynamic content would be here -->
+      <div class="blog-list-item">
+        <div class="blog-image">
+          <img src="assets/blog-img.png" alt="" />
+        </div>
+        <div class="blog-content">
+          <div class="btn-group">
+            <button class="btn-edit">Edit Post</button>
+            <button class="btn-post">Delete Post</button>
+          </div>
+          <h1>
+            <a href="blog-detail.html" target="_blank">Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a>
+          </h1>
+          <div class="detail-blog-content">
+            12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+          </div>
+          <p>
+            Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+            menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+            ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+            meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Quam, molestiae
+            numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+            eligendi debitis?
+          </p>
+
+          <div style="float:right; margin: 10px">
+            <p style="font-size: 15px; color:grey">1 minutes ago</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/blog.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
